@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flowers Cards Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="atlas">
+      <section class="hero">
+        <div class="hero__micro hero__micro--left">
+          BASIC FLORIST INDEX<br />
+          SEASONAL CUT FLOWERS
+        </div>
+        <div class="hero__micro hero__micro--right">
+          POSTER CARDS A1-A3<br />
+          INDEX CARDS B1-B3
+        </div>
+        <p class="hero__kicker">visual learning system</p>
+        <h1>Floral<br />Atlas</h1>
+        <p class="hero__subtitle">архивный ботанический постер + практичная карточка флориста</p>
+        <div class="hero__stem" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <section class="poster-grid" aria-label="Poster cards">
+        <article class="poster poster--rose">
+          <div class="poster__topline">
+            <span>SPRING / SUMMER</span>
+            <span>FOCAL A1</span>
+          </div>
+          <div class="flower flower--rose" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="poster__stem poster__stem--straight" aria-hidden="true"></div>
+          <div class="poster__copy poster__copy--left">ROSA<br />CUT FLOWER MARKET</div>
+          <div class="poster__copy poster__copy--right">5-10 DAYS<br />COOL CHAIN</div>
+          <h2>Rose</h2>
+          <p>Rosa × hybrida</p>
+        </article>
+
+        <article class="poster poster--tulip">
+          <div class="poster__topline">
+            <span>SPRING PEAK</span>
+            <span>LINE / MASS A2</span>
+          </div>
+          <div class="flower flower--tulip" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="poster__stem poster__stem--curve" aria-hidden="true"></div>
+          <div class="poster__copy poster__copy--left">TULIPA<br />MOVES IN VASE</div>
+          <div class="poster__copy poster__copy--right">4-7 DAYS<br />FRESH CUT</div>
+          <h2>Tulip</h2>
+          <p>Tulipa gesneriana</p>
+        </article>
+
+        <article class="poster poster--hydrangea">
+          <div class="poster__topline">
+            <span>SUMMER / IMPORT</span>
+            <span>VOLUME A3</span>
+          </div>
+          <div class="flower flower--hydrangea" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="poster__stem poster__stem--short" aria-hidden="true"></div>
+          <div class="poster__copy poster__copy--left">HYDRANGEA<br />WATER DEMANDING</div>
+          <div class="poster__copy poster__copy--right">5-9 DAYS<br />HYDRATION</div>
+          <h2>Hydrangea</h2>
+          <p>Hydrangea macrophylla</p>
+        </article>
+      </section>
+
+      <section class="index-grid" aria-label="Index cards">
+        <article class="index-card index-card--rose">
+          <div class="index-card__head">
+            <span>01 / FOCAL</span>
+            <strong>Rose</strong>
+          </div>
+          <dl>
+            <div><dt>Сезон</dt><dd>доступна круглый год, пик зависит от региона</dd></div>
+            <div><dt>Стойкость</dt><dd>обычно 5-10 дней</dd></div>
+            <div><dt>Уход</dt><dd>чистая вода, свежий срез, удалить листья ниже воды</dd></div>
+            <div><dt>Роль</dt><dd>фокус, романтика, плотная форма</dd></div>
+          </dl>
+          <p class="note">Ошибка новичка: оставлять листву в воде и смешивать старую срезку со свежей.</p>
+        </article>
+
+        <article class="index-card index-card--tulip">
+          <div class="index-card__head">
+            <span>02 / SPRING</span>
+            <strong>Tulip</strong>
+          </div>
+          <dl>
+            <div><dt>Сезон</dt><dd>пик весной, импорт расширяет доступность</dd></div>
+            <div><dt>Стойкость</dt><dd>обычно 4-7 дней</dd></div>
+            <div><dt>Уход</dt><dd>прохлада, мало воды, поддержка формы при обработке</dd></div>
+            <div><dt>Роль</dt><dd>линия, движение, мягкая масса</dd></div>
+          </dl>
+          <p class="note">Особенность: продолжает расти и изгибаться после постановки в вазу.</p>
+        </article>
+
+        <article class="index-card index-card--hydrangea">
+          <div class="index-card__head">
+            <span>03 / VOLUME</span>
+            <strong>Hydrangea</strong>
+          </div>
+          <dl>
+            <div><dt>Сезон</dt><dd>лето и импортные поставки в течение года</dd></div>
+            <div><dt>Стойкость</dt><dd>обычно 5-9 дней при хорошем тургоре</dd></div>
+            <div><dt>Уход</dt><dd>обновить срез, глубокая вода, восстановление тургора</dd></div>
+            <div><dt>Роль</dt><dd>объем, облако, мягкая архитектура</dd></div>
+          </dl>
+          <p class="note">Ошибка новичка: не восстановить обезвоженную гортензию перед работой.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
