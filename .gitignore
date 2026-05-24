@@ -1,0 +1,17 @@
+.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+tmp_*
+*.tmp
+*.log
+
+# Generated caches
+__pycache__/
+node_modules/
+
