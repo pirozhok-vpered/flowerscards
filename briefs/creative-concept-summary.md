@@ -6,6 +6,8 @@ Date: 2026-05-24
 
 Flowers Cards is a visual learning atlas for a beginning florist. The goal is to make flower study feel like a designed product: beautiful, collectible, clear, and practical.
 
+The refined product idea is: a practical floristry workbook disguised as a beautiful visual atlas. It should teach the user how to think like a florist, not only memorize flower names.
+
 The current prototype lives at:
 
 - `prototype/index.html`
@@ -26,7 +28,7 @@ The strongest current direction is the flower poster card. Future work should pr
 
 ## Card Sequence
 
-Each flower now uses a three-card sequence:
+Each flower currently uses a three-card sequence:
 
 1. Poster Card
 2. Story / Context Card
@@ -39,6 +41,16 @@ This sequence should repeat per flower:
 - Hydrangea poster -> Hydrangea story -> Hydrangea care
 
 The sequence is designed so the user first feels the flower visually, then understands its cultural/botanical context, then learns how to work with it as a florist.
+
+The deeper target structure for major flowers is a five-module learning sequence:
+
+1. Poster.
+2. Story / character.
+3. Buy & check.
+4. Process & store.
+5. Types & compose.
+
+Hydrangea is the approved pilot flower for this deeper structure.
 
 ## Card 1: Poster Card
 
@@ -238,9 +250,10 @@ Recommended next tasks:
 1. Build one full polished flower sequence for hydrangea.
 2. Test one real free photo in the poster slot.
 3. Design the variety/type strip.
-4. Improve the care card grid.
-5. Add source tracking for factual and photo claims.
-6. Decide whether the atlas should be horizontal A4, 16:9 slides, or both.
+4. Add Buy & Check and Process & Store modules.
+5. Improve the care card grid.
+6. Add source tracking for factual and photo claims.
+7. Decide whether the atlas should be horizontal A4, 16:9 slides, or both.
 
 ## Open Questions
 
