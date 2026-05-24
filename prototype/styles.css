@@ -33,6 +33,7 @@ body {
 
 .hero,
 .poster,
+.story-card,
 .index-card {
   position: relative;
   overflow: hidden;
@@ -42,6 +43,7 @@ body {
 
 .hero::after,
 .poster::after,
+.story-card::after,
 .index-card::after {
   content: "";
   position: absolute;
@@ -143,9 +145,9 @@ body {
   margin-top: 24px;
 }
 
-.flower-pair {
+.flower-set {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -379,6 +381,79 @@ body {
 .flower--hydrangea i:nth-child(5) { left: 118px; top: 98px; transform: rotate(31deg); }
 .flower--hydrangea i:nth-child(6) { left: 0; top: 112px; transform: rotate(-12deg); }
 
+.story-card {
+  display: flex;
+  min-height: 640px;
+  padding: 28px;
+  flex-direction: column;
+  background: #f0eadb;
+  color: #171711;
+}
+
+.story-card--rose {
+  background:
+    linear-gradient(180deg, rgba(200, 50, 34, 0.22), transparent 48%),
+    #efe4d4;
+}
+
+.story-card--tulip {
+  background:
+    linear-gradient(180deg, rgba(89, 96, 15, 0.22), transparent 48%),
+    #e8e5cf;
+}
+
+.story-card--hydrangea {
+  background:
+    linear-gradient(180deg, rgba(184, 198, 204, 0.48), transparent 48%),
+    #ede6d5;
+}
+
+.story-card__topline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(17, 18, 15, 0.56);
+}
+
+.story-card__mark {
+  margin-top: 86px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 74px;
+  line-height: 0.82;
+  color: rgba(17, 18, 15, 0.26);
+}
+
+.story-card h3 {
+  max-width: 340px;
+  margin: 28px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  line-height: 1.02;
+  font-weight: 500;
+}
+
+.story-card p {
+  max-width: 390px;
+  margin: 18px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.38;
+}
+
+.story-card aside {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(17, 18, 15, 0.22);
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(17, 18, 15, 0.58);
+}
+
 .index-card {
   display: flex;
   min-height: 640px;
@@ -502,7 +577,7 @@ dd {
     font-size: 82px;
   }
 
-  .flower-pair {
+  .flower-set {
     grid-template-columns: 1fr;
   }
 
